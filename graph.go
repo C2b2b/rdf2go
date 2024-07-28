@@ -48,6 +48,16 @@ func NewGraph(uri string, skipVerify ...bool) *Graph {
 	return g
 }
 
+func (g *Graph) GetAllTriplets() []*Triple {
+	t := make([]*Triple, 0, len(g.triples))
+
+	for key := range g.triples {
+		t = append(t, key)
+	}
+
+	return t
+}
+
 // Len returns the length of the graph as number of triples in the graph
 func (g *Graph) Len() int {
 	return len(g.triples)
