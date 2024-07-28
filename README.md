@@ -9,7 +9,7 @@ Native golang parser/serializer from/to Turtle and JSON-LD.
 
 Just go get it!
 
-`go get -u github.com/deiu/rdf2go`
+`go get -u github.com/C2b2b/rdf2go`
 
 # Example usage
 
